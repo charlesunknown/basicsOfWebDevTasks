@@ -1,0 +1,18 @@
+/*
+Author: André-Charles
+Date: 2025/9/10
+*/
+body {
+  background-color: #333333;
+}
+a {
+  color: green;
+}
+h1 {
+    color: red;
+    font-size: 36px;
+}
+p {
+    
+    color: gray;
+}
