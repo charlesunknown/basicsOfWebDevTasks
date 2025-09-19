@@ -1,0 +1,54 @@
+/*
+Author: André-Charles
+Date: 2025/9/18
+*/
+body {
+  background-color: rgb(7, 7, 110);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#copyright{
+     text-align: center;
+     margin: 150px;
+}
+img{
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+button {
+  background-color: #d4b816;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  font-size: 32px;
+}
+
+button:hover{
+    background-color: #4b4108;
+    color: rgb(221, 192, 28);
+}
+
+#audio_controls{
+        position:fixed;
+        bottom:0px;
+        right:0px;
+}
+video{
+    display: block;
+    margin: auto;
+}

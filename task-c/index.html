@@ -7,11 +7,31 @@ Date: 18/9/2025
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Task-!c Page</title>
+  <title>Task-C Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>My Multimedia Showcase</h1>
-  <img src="C:\Users\charl\Documents\BasicsOfWebDevelopment\task-c\maxresdefault.webp" alt="The Character Steve from minecraft looks at something in the distance happily while a Creeper sneaks behind him">
+
+  <p>
+    <img src="maxresdefault.webp" alt="The Character Steve from minecraft looks at something in the distance happily while a Creeper sneaks behind him"/>
+    <p>
+        Want to listen to some music while you assess the quality of this page ? Click on the play button of the audio controls on the bottom-right side of the page
+    </p>
+
+    <audio id= audio_controls controls autoplay>
+      <source src="Charlie Lewis - Twelve Tones for Candace.mp3" type="audio/mp3">
+    </audio>
+
+    <button onclick="document.getElementById('embeddedvideo').play()">Play Video</button>
+
+    <video id= "embeddedvideo" controls>
+      <source src="Encounter with _ A Creeper.mp4" type="video/mp4" />
+    </video>
+
+  </p>
+  <p id="copyright">I have made the thumbnail and the video using Minecraft's files, my work would fall under CC BY-NC-SA with a mention that all rights are reserved to Mojang since they are the rightful owner.
+    Otherwise the music is Twelve Tones for Candace by Charlie Lewis, downloaded on Free Music Archive and falls under CC BY-NC-SA.
+  </p>
 </body>
 </html>
