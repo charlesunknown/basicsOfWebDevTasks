@@ -2,22 +2,51 @@
 Author: André-Charles
 Date: 2025/9/18
 */
+@font-face {
+  font-family: minecraftFont;
+  src: url(minecraft.ttf);
+}
 body {
-  background-color: rgb(7, 7, 110);
+    background-image: url("1background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 h1{
-    color: rgb(255, 255, 255);
+    font-family: minecraftFont;
+    font-size: 56px;
     text-align: center;
 }
-
-p{
-    color: rgb(255, 255, 255);
+.content {
+  text-align: center;
+}
+#advice{
+    display: inline-block;
+    background-image: url("Grass_Block_(side_texture)_JE2_BE2.png");
     text-align: center;
+    
+    padding-top:25px;
+    padding-bottom: 25px;
+    padding-left: 125px;
+    padding-right: 125px;
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+    font-family: minecraftFont;
 }
 #copyright{
+    display: inline-block;
+     background-image: url("Stone_(texture)_JE5_BE3.png");
+     padding-top: 50px;
+     padding-bottom: 50px;
+     padding-left: 100px;
+     padding-right:100px;
      text-align: center;
-     margin: 150px;
+     margin: 100px;
+     font-weight: bold;
+     font-family: minecraftFont;
+     color: white;
 }
 img{
     max-width: 500px;
@@ -27,7 +56,7 @@ img{
 }
 
 button {
-  background-color: #d4b816;
+  background-image: url("Dirt_(texture)_JE2_BE2.png");
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
@@ -36,6 +65,7 @@ button {
   display: block;
   margin: auto;
   font-size: 32px;
+  font-family: minecraftFont;
 }
 
 button:hover{
@@ -49,6 +79,9 @@ button:hover{
         right:0px;
 }
 video{
+    size: contain;
     display: block;
-    margin: auto;
+    margin:  auto;
+    max-width: 100%;  
+    height: auto;     
 }
