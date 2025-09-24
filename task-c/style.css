@@ -1,6 +1,6 @@
 /*
 Author: André-Charles
-Date: 2025/9/18
+Date: 2025/9/24
 */
 @font-face {
   font-family: minecraftFont;
@@ -84,4 +84,5 @@ video{
     margin:  auto;
     max-width: 100%;  
     height: auto;     
+
 }
