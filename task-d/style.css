@@ -85,3 +85,9 @@ a {
     color: white;
     font-weight: bold;
 }
+img[alt]{
+    color:brown;
+}
+div ol>li{
+    font-style: italic;
+}
