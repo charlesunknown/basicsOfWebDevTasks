@@ -11,13 +11,16 @@ img{
     display: block;
     margin:auto;
 }
+h1,h2 {
+    text-align: center;
+}
 h1 {
     font-size: 56px;
-    text-align: center;
+
 }
 h2 {
     font-size: 20;
-    text-align: center;
+    
     color: rgb(97, 19, 0);
 }
 p{  
@@ -79,4 +82,7 @@ div ol>li{
 }
 section ul li{
     color:chocolate;
+}
+a[target]{
+    background-color: beige;
 }
