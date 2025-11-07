@@ -143,6 +143,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const { validSubmit, NameValue, EmailValue, PhoneValue, DOBValue } = validateForm();
     if (validSubmit === 4) {
       const row = document.createElement("tr");
+      
+
+      const NameCell = document.createElement("td");
+      NameCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
+      NameCell.textContent = NameValue;
+      row.appendChild(NameCell);
+
+      const EmailCell = document.createElement("td");
+      EmailCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
+      EmailCell.textContent = EmailValue;
+      row.appendChild(EmailCell);
+
       const TimestampCell = document.createElement("td");
       const now = new Date();
       const formattedDate= now.toLocaleDateString('en-US', {
@@ -156,16 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       row.appendChild(TimestampCell);
-
-      const NameCell = document.createElement("td");
-      NameCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
-      NameCell.textContent = NameValue;
-      row.appendChild(NameCell);
-
-      const EmailCell = document.createElement("td");
-      EmailCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
-      EmailCell.textContent = EmailValue;
-      row.appendChild(EmailCell);
 
       const PhoneCell = document.createElement("td");
       PhoneCell.textContent = PhoneValue;
