@@ -152,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
+        hourCycle: 'h12',
       });
 
       TimestampCell.className = "max-lg:text-[2rem]"
