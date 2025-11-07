@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const NameInput = document.getElementById("Name");
   const EmailInput = document.getElementById("Email");
   const PhoneInput = document.getElementById("PhoneNumber");
+  const TermsInput = document.getElementById("TermsCheckbox");
   const DOBInput = document.getElementById("DOB");
   const TermsCheckbox = document.getElementById("TermsCheckbox");
 
@@ -162,10 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
       PhoneCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       row.appendChild(PhoneCell);
 
-      const DOBCell = document.createElement("td");
-      DOBCell.textContent = DOBValue;
-      DOBCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
-      row.appendChild(DOBCell);
+      const TermsCell = document.createElement("td");
+      TermsCell.textContent = '✅';
+      TermsCell.className = "max-lg:hidden text-center max-lg:text-[2rem]";
+      row.appendChild(TermsCell);
       
       const TimestampCell = document.createElement("td");
       const now = new Date();
