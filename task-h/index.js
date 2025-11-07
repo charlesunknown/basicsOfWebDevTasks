@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
 
       const NameCell = document.createElement("td");
-      NameCell.className = "text-center p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
+      NameCell.className = "text-left p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       NameCell.textContent = NameValue;
       row.appendChild(NameCell);
 
