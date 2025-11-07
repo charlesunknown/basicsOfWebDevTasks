@@ -22,69 +22,101 @@
     <!-- Top row split into two blocks -->
     <div class="max-lg:block flex mb-[1rem] gap-[1rem]">
       <!-- Student info (30%) -->
-      <section class="lg:flex-[1_1_30%] bg-[#fff] py-[0.75rem] px-[1rem] border-[1px] border-solid border-[#d0d7e2] rounded-[8px] shadow-[0_2px_10px_rgba(0,0,0,0.04)] max-lg:m-[5px]" aria-label="Student information">
+      <section
+        class="lg:flex-[1_1_30%] bg-[#fff] py-[0.75rem] px-[1rem] border-[1px] border-solid border-[#d0d7e2] rounded-[8px] shadow-[0_2px_10px_rgba(0,0,0,0.04)] max-lg:m-[5px]"
+        aria-label="Student information">
         <h2 class="m-[0_0_0.5rem_0] text-[1.1rem] font-bold max-lg:text-[2.2rem]">Information</h2>
         <p class="m-0 mt-[0.5rem] max-lg:text-[2.2rem]"><span class="student-name">Charles-André Nelzy</span></p>
         <p class="mt-[0.5rem] max-lg:text-[2.2rem]"><span class="student-group">NITS24K</span></p>
       </section>
 
       <!-- Controls (70%): add course + day marks -->
-      <section class="lg:flex-[1_1_70%] bg-[#fff] py-[0.75rem] px-[1rem] border-[1px] border-solid border-[#d0d7e2] rounded-[8px] shadow-[0_2px_10px_rgba(0,0,0,0.04)] max-lg:m-[5px]" aria-label="Add course row">
+      <section
+        class="lg:flex-[1_1_70%] bg-[#fff] py-[0.75rem] px-[1rem] border-[1px] border-solid border-[#d0d7e2] rounded-[8px] shadow-[0_2px_10px_rgba(0,0,0,0.04)] max-lg:m-[5px]"
+        aria-label="Add course row">
         <h2 class="m-[0_0_0.5rem_0] text-[1.1rem] font-bold max-lg:text-[2.2rem]">Information Fillout</h2>
 
         <form id="addCourseForm" novalidate>
           <div class="flex gap-[0.5rem] items-center m-[0.5rem_0] max-lg:text-[2.2rem]">
             <label for="Name">Full Name</label>
-            <input class="focus:outline-solid  flex-[1_1_auto] py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]" id="Name" name="Name" type="text" required placeholder="FirstName LastName (2 words mininum and 2 characters per word minimum)">
+            <input
+              class="focus:outline-solid  flex-[1_1_auto] py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]"
+              id="Name" name="Name" type="text" required
+              placeholder="FirstName LastName (2 words mininum and 2 characters per word minimum)">
             <div class="error"></div>
           </div>
-          
+
           <div class="flex gap-[0.5rem] items-center m-[0.5rem_0] max-lg:text-[2.2rem]">
             <label for="Email">Email</label>
-            <input class="focus:outline-solid flex-[1_1_auto] py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]" id="Email" name="Email" type="email" required placeholder="xxx@yyy.zzz">
+            <input
+              class="focus:outline-solid flex-[1_1_auto] py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]"
+              id="Email" name="Email" type="email" required placeholder="xxx@yyy.zzz">
             <div class="error"></div>
           </div>
 
           <div class="flex gap-[0.5rem] items-center m-[0.5rem_0] max-lg:text-[2.2rem]">
             <label for="PhoneNumber">Phone Number</label>
-            <input class="focus:outline-solid flex-[1_1_auto] py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]" id="PhoneNumber" name="PhoneNumber" type="text" required placeholder="Enter French Phone Number, no special characters">
+            <input
+              class="focus:outline-solid flex-[1_1_auto] py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]"
+              id="PhoneNumber" name="PhoneNumber" type="text" required
+              placeholder="Enter French Phone Number, no special characters">
             <div class="error"></div>
           </div>
 
           <div class="flex gap-[0.5rem] items-center m-[0.5rem_0] max-lg:text-[2.2rem]">
             <label for="DOB">Date Of Birth</label>
-            <input class="focus:outline-solid flex py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]" id="DOB" name="DOB" type="date" required placeholder="31/07/2005">
+            <input
+              class="focus:outline-solid flex py-[0.45rem] px-[0.6rem] border-[1px] border-solid rounded-[6px] border-[#d0d7e2] max-lg:text-[2.2rem]"
+              id="DOB" name="DOB" type="date" required placeholder="31/07/2005">
             <div class="error"></div>
           </div>
 
-          
 
-          <fieldset class="flex flex-wrap gap-[0.75rem] m-[0.5rem_0_0.75rem] border-[1px] border-dashed border-[#d0d7e2] rounded-[6px] py-[0.5rem] px-[0.75rem] max-lg:text-[2.2rem]">
+
+          <fieldset
+            class="flex flex-wrap gap-[0.75rem] m-[0.5rem_0_0.75rem] border-[1px] border-dashed border-[#d0d7e2] rounded-[6px] py-[0.5rem] px-[0.75rem] max-lg:text-[2.2rem]">
             <!-- <legend>Days (yes = &#9989;, no = &#10060;)</legend>
             -->
 
-            <label><input class="max-lg:w-[2.2rem] max-lg:h-[2.2rem]"id="TermsCheckbox" type="checkbox" name="checkbox" value="Yes"> Check to agree with Terms</label>
+            <label><input class="max-lg:w-[2.2rem] max-lg:h-[2.2rem]" id="TermsCheckbox" type="checkbox" name="checkbox"
+                value="Yes"> Check to agree with Terms</label>
           </fieldset>
 
           <div class="flex gap-[0.5rem] items-center m-[0.5rem 0]">
-            <button id="Submit" type="submit" class="hover:bg-[#eef2f7] py-[0.45rem] px-[0.8rem] border-[1px] border-solid border-[#d0d7e2] rounded-[6px] bg-[#f8fafc] max-lg:text-[2.2rem]">Submit</button>
-            
+            <button id="Submit" type="submit"
+              class="hover:bg-[#eef2f7] py-[0.45rem] px-[0.8rem] border-[1px] border-solid border-[#d0d7e2] rounded-[6px] bg-[#f8fafc] max-lg:text-[2.2rem]">Submit</button>
+
           </div>
         </form>
       </section>
     </div>
 
     <!-- Table -->
-    <div class="overflow-x-auto bg-[#fff] border-[1px] border-solid border-[#d0d7e2] rounded-[8px] shadow-[0_2px_10px_rgba(0,0,0,0.06)] p-[1rem] ">
+    <div
+      class="overflow-x-auto bg-[#fff] border-[1px] border-solid border-[#d0d7e2] rounded-[8px] shadow-[0_2px_10px_rgba(0,0,0,0.06)] p-[1rem] ">
       <table class="text-[1rem] border-collapse w-[100%]" id="timetable">
+        <colgroup>
+          <col span="2">
+          <col span="5" class="max-lg:collapse">
+        </colgroup>
         <thead>
           <tr>
-            
-            <th class="text-left bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">Name</th>
-            <th class="text-center bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">Email</th>
-            <th class="max-lg:w-[10%] text-center w-[15%] bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">Phone Number</th>
-            <th class="max-lg:w-[10%] text-center w-[15%] bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">Date Of Birth</th>
-            <th class="max-lg:hidden w-[15%] bg-[#273e73] text-[#fff] text-center p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">Timestamp</th>
+
+            <th
+              class="text-left bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">
+              Name</th>
+            <th
+              class="text-center bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">
+              Email</th>
+            <th
+              class="max-lg:w-[10%] text-center w-[15%] bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">
+              Phone Number</th>
+            <th
+              class="max-lg:w-[10%] text-center w-[15%] bg-[#273e73] text-[#fff] p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">
+              Date Of Birth</th>
+            <th
+              class="max-lg:hidden w-[15%] bg-[#273e73] text-[#fff] text-center p-[0.75rem] border-b-[1px] border-b-solid border-b-[#d0d7e2] max-lg:text-[2rem]">
+              Timestamp</th>
           </tr>
         </thead>
         <tbody>
