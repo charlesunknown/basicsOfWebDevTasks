@@ -155,6 +155,18 @@ document.addEventListener("DOMContentLoaded", () => {
       EmailCell.textContent = EmailValue;
       row.appendChild(EmailCell);
 
+    
+
+      const PhoneCell = document.createElement("td");
+      PhoneCell.textContent = PhoneValue;
+      PhoneCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
+      row.appendChild(PhoneCell);
+
+      const DOBCell = document.createElement("td");
+      DOBCell.textContent = DOBValue;
+      DOBCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
+      row.appendChild(DOBCell);
+      
       const TimestampCell = document.createElement("td");
       const now = new Date();
       const formattedDate= now.toLocaleDateString('en-US', {
@@ -168,16 +180,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       row.appendChild(TimestampCell);
-
-      const PhoneCell = document.createElement("td");
-      PhoneCell.textContent = PhoneValue;
-      PhoneCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
-      row.appendChild(PhoneCell);
-
-      const DOBCell = document.createElement("td");
-      DOBCell.textContent = DOBValue;
-      DOBCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
-      row.appendChild(DOBCell);
 
       table.appendChild(row);
 
