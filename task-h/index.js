@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       const Timestamp =  now.toLocaleTimeString("en-GB");
       TimestampCell.textContent = formattedDate +" at "+ Timestamp;
-      TimestampCell.className = "max-lg:invisible text-center max-lg:text-[2rem]";
+      TimestampCell.className = "max-lg:hidden text-center max-lg:text-[2rem]";
 
 
       row.appendChild(TimestampCell);
