@@ -148,14 +148,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (validSubmit === 4) {
       const row = document.createElement("tr");
       const TimestampCell = document.createElement("td");
-      TimestampCell.textContent = new Date().toLocaleDateString('en-US', {
+      const now = new Date();
+      const formattedDate= now.toLocaleDateString('en-US', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
-        hourCycle: 'h12',
       });
+      const Timestamp =  now.toLocaleTimeString("en-GB");
+      TimestampCell.textContent = formattedDate +" at "+ Timestamp;
+      TimestampCell.className = "max-lg:text-[2rem]";
 
-      TimestampCell.className = "max-lg:text-[2rem]"
 
       row.appendChild(TimestampCell);
 
