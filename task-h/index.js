@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ErrorDisplay = inputControl.querySelector('.error');
 
     ErrorDisplay.innerText = message;
-    ErrorDisplay.className ="error text-[#ff0000]";
+    ErrorDisplay.className = "error text-[#ff0000]";
     element.classList.add("border-[#ff0000]");
     element.classList.remove("border-[#66ff40]");
   };
@@ -148,27 +148,34 @@ document.addEventListener("DOMContentLoaded", () => {
     if (validSubmit === 4) {
       const row = document.createElement("tr");
       const TimestampCell = document.createElement("td");
-      TimestampCell.textContent = new Date();
+      TimestampCell.textContent = new Date().toLocaleDateString('en-US', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+      });
+
+      TimestampCell.className = "max-lg:text-[2rem]"
+
       row.appendChild(TimestampCell);
 
       const NameCell = document.createElement("td");
-      NameCell.className = "text-center w-[12%] p-[0.75rem]";
+      NameCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       NameCell.textContent = NameValue;
       row.appendChild(NameCell);
 
       const EmailCell = document.createElement("td");
-      EmailCell.className= "text-center w-[12%] p-[0.75rem]";
+      EmailCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       EmailCell.textContent = EmailValue;
       row.appendChild(EmailCell);
 
       const PhoneCell = document.createElement("td");
       PhoneCell.textContent = PhoneValue;
-      PhoneCell.className ="text-center w-[12%] p-[0.75rem]";
+      PhoneCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       row.appendChild(PhoneCell);
 
       const DOBCell = document.createElement("td");
       DOBCell.textContent = DOBValue;
-      DOBCell.className = "text-center w-[12%] p-[0.75rem]";
+      DOBCell.className = "text-center w-[12%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       row.appendChild(DOBCell);
 
       table.appendChild(row);
