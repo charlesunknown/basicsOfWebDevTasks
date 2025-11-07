@@ -156,13 +156,11 @@ document.addEventListener("DOMContentLoaded", () => {
       EmailCell.textContent = EmailValue;
       row.appendChild(EmailCell);
 
-    
-
       const PhoneCell = document.createElement("td");
       PhoneCell.textContent = PhoneValue;
       PhoneCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
       row.appendChild(PhoneCell);
-      
+
       const DOBCell = document.createElement("td");
       DOBCell.textContent = DOBValue;
       DOBCell.className = "text-center w-[10%] p-[0.75rem] max-lg:text-[2rem] max-lg:w-[20%] max-lg:p-[2rem]";
