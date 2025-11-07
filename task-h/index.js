@@ -1,12 +1,8 @@
 // index.js
-// Author: Ville Heikkiniemi
-// Date: 2025-10-06
-// Handles adding new course rows with day marks (✅/❌)
+// Author: NELZY CHarles
+// Date: 2025-11-07
 
 document.addEventListener("DOMContentLoaded", () => {
-  const CHECK = '✅';
-  const CROSS = '❌';
-  const dayOrder = ["Fri", "Mon"];
 
   const form = document.getElementById("addCourseForm");
   const table = document.getElementById("timetable").querySelector("tbody");
