@@ -40,9 +40,6 @@ function showOfferDialog(hisName, stats, img) {
     text_div.appendChild(Stats_dialog);
 
     cdialog.appendChild(text_div);
-    
-    const price_div = document.createElement("div");
-    
 
 
     const section_dialog=document.querySelector(".showcase-products");
