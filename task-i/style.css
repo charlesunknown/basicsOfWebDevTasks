@@ -95,7 +95,7 @@ body {
     background: rgb(0, 0, 0);
 }
 
-.site-footer h1 {
+.site-footer h2 {
     font-size: var(--h1-size);
     color: var(--txt_colour);
 }
