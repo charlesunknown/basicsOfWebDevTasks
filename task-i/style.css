@@ -208,7 +208,6 @@ body {
     justify-content: center;
     background-color: var(--txt_bg);
     font-style: italic;
-    font-size: 0.rem;
 }
 
 .showcase-products {
@@ -241,29 +240,54 @@ button img {
     object-fit: cover;    /* ensures the image fills the square */
 }
 dialog{
+    display: flex;
+    width:50%;
+    padding: 1.5rem;
     background-color: black;
+    flex-wrap: wrap;
 }
 dialog::backdrop{
         background-color: var(--txt_bg);
 }
+#title_div{
+    display:flex;
+    flex-basis: 100%;
+}
+#dialog_title{
+    display: flex;
+    width:90%;
+    justify-content: center;
+
+}
+#close{
+    display: flex;
+    width:30px;
+    height:30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 #dialog_text{
     display: flex;
     color:var(--txt_colour);
-    flex: 1 1 50%;
-    width: 50%;
+    flex-basis: 50%;
+    
+}
+#dialog_text h1{
+    text-align: left;
+    font-size: 1.6rem;
 }
 #dialog_img{
-        display: flex;
-    justify-content: center;
-
-    overflow: hidden;
-    flex: 1 1 50%;
+    display: flex;
+    
 
 }
 #dialog_img img{
-    flex-shrink: 0;
-    min-width: 50;
-    min-height: 100%;
+     width:95%;
+    height:95%;
+    object-fit: cover;
 }
 #parent_link{
     margin-top: 2%;
@@ -275,151 +299,10 @@ dialog::backdrop{
     text-decoration: underline;
     font-size: 2rem;
 }
-/* --- NEW: top row split (50% + 50%) --- */
-.top-grid {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
 
-.student-info,
-.controls {
-    background:var(--txt_bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 0.75rem 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-}
-
-.student-info {
-    flex: 1 1 30%;
-}
-
-.controls {
-    flex: 1 1 70%;
-}
-
-.student-info p {
-    margin: 0;
-}
-
-.student-info p+p {
-    margin-top: 0.5rem;
-}
-
-.controls-title,
-.student-info-title {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-.form-row {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    margin: 0.5rem 0;
-}
-
-.form-row input[type="text"] {
-    flex: 1 1 auto;
-    padding: 0.45rem 0.6rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-}
-
-.form-row input:focus {
-    outline: 0;
-}
-
-.form-row.success input {
-    border-color: #66ff40;
-}
-
-.form-row.error input {
-    border-color: #ff0000;
-    font-size: 0.9rem;
-    margin-top: 0.25rem;
-}
-
-.Terms {
-    margin: 0.5rem 0 0.75rem;
-    border: 1px dashed var(--border);
-    border-radius: 6px;
-    padding: 0.5rem 0.75rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-}
-
-.Terms legend {
-    padding: 0 0.25rem;
-    font-weight: 600;
-    color: #334155;
-}
-
-.btn {
-    padding: 0.45rem 0.8rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: #f8fafc;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #eef2f7;
-}
-
-.btn-secondary {
-    background: #ffffff;
-}
-
-/* Table container */
-.table-wrap {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-    overflow-x: auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-}
-
-/* Table */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1rem;
-}
-
-/* Header cells */
-.table thead th {
-    background: var(--brand);
-    color: #fff;
-    text-align: left;
-    padding: 0.75rem;
-    border-bottom: 1px solid var(--border);
-}
-
-/* Body cells */
-.table tbody td {
-    padding: 0.6rem 0.75rem;
-    border-bottom: 1px solid var(--border);
-}
-
-/* Alternate row color */
-.table tbody tr:nth-child(even) {
-    background: var(--table-alt);
-}
-
-/* Column widths: 40% + 12%*5 = 100% */
-.table thead th:nth-child(1),
-.table tbody td:nth-child(1) {
-    width: 40%;
-}
-
-.table thead th:nth-child(n+2),
-.table tbody td:nth-child(n+2) {
-    width: 12%;
-    text-align: center;
+#list li{
+    color: var(--txt_colour);
+    font-size: 1.6rem;
 }
 
 /* Small screens: stack the top blocks */
