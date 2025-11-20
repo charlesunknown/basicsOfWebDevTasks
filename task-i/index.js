@@ -22,6 +22,7 @@ function showOfferDialog(hisName, stats, img) {
     cdialog.appendChild(title_div);
     const img_div = document.createElement("div");
     const div_img= document.createElement("img");
+    div_img.alt= img.alt;
     div_img.src=img;
     img_div.id="dialog_img";
     
