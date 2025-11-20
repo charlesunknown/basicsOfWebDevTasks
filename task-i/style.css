@@ -411,4 +411,54 @@ dialog::backdrop{
         height: 100%;
         object-fit: cover;    /* ensures the image fills the square */
     }
+    dialog{
+        display: flex;
+        width:80%;
+        padding: 1.5rem;
+        background-color: black;
+        flex-wrap: wrap;
+    }
+    dialog::backdrop{
+        background-color: var(--txt_bg);
+    }
+    #title_div{
+        display:flex;
+        flex-basis: 100%;
+    }
+    #dialog_title{
+        display: flex;
+        width:90%;
+        justify-content: center;
+
+    }
+    #close{
+        display: flex;
+        width:30px;
+        height:30px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #dialog_text{
+        display: flex;
+        color:var(--txt_colour);
+        flex-basis: 50%;
+        
+    }
+    #dialog_text h1{
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    #dialog_img{
+        display: flex;
+        
+
+    }
+    #dialog_img img{
+        width:95%;
+        height:95%;
+        object-fit: cover;
+    }
 }
