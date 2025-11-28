@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogue Page - Poundmates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+
+<body>
+    <header class="site-header">
+        <h1 id="title">POUNDMATES</h1>
+        <div class="header-right">
+            <a  href="https://charlesunknown.github.io/basicsOfWebDevTasks/task-i/index.html">Home</a>
+            <a href="https://charlesunknown.github.io/basicsOfWebDevTasks/task-j/catalog.html">Catalogue</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a class="active" href="#about">Order</a>
+         </div>
+    </header>
+    <main>
+        <section class="Intro">
+            <div class="controls">
+                
+                 <h2 class="controls-title">Information Fillout</h2>
+
+                <form id="addCourseForm" novalidate>
+
+                    <div class="form-row">
+                        <label for="Name">Full Name</label>
+                        <input id="Name" name="Name" type="text" required placeholder="FirstName LastName">
+                        <div class="error"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="Email">Email</label>
+                        <input id="Email" name="Email" type="email" required placeholder="xxx@yyy.zzz">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="PhoneNumber">Phone Number</label>
+                        <input id="PhoneNumber" name="PhoneNumber" type="text" required placeholder="Enter French Phone Number, no special characters">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="DOB">Date Of Birth</label>
+                        <input id="DOB" name="DOB" type="date" required>
+                        <div class="error"></div>
+                    </div>
+
+                    
+                    <div id="order_basket">
+                        
+                    </div>
+                    <fieldset class="Terms">
+                        <label><input id="TermsCheckbox" type="checkbox" name="checkbox" value="Yes"> Check to agree with Terms</label>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <button id="Submit" type="submit" class="submit_btn">Submit Request</button>
+                        
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="student-info" aria-label="Student information">
+                <h2 class="student-info-title">How to order?</h2>
+                <p>Click the Poundmates to learn about them then click the order button if you wish for them to help you in battle. Only 1(one) may be ordered at a time. </p>
+                <p>Enter your information, verify that you chose the right product, accept terms then click he submit to order button.</p>
+            </div>
+        </section>
+        
+        
+        <div class="Showcase">
+            <div class="showcase-products">
+                <h1> Our Catalogue</h1>
+                <button class="Offer" onclick='showOfferDialog("Daigo Dojima","Stand in awe as the Tojo Clans sixth chairman summons his forebears from beyond the grave. This immortal volley damages all enemies and may seal their skills.","Daigo_Poundmates.webp","Price: 5500€")'>
+                    <img src="Daigo_Poundmates.webp" alt="Daigo Dojima from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Kazuma Kiryu","The legend himself delivers a pounding beyond comprehension Deals enormous damage to all enemies with moves that rival a dragons. Also has a chance to instantly knock out foes.","Kazuma_Kiryu_Poundmates.webp","Price: 5500€")'>
+                    <img src="Kazuma_Kiryu_Poundmates.webp" alt="Kazuma Kiryu from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Chau Ka Long","Say the word and a mysterious weapon shop owner will arrive to test out his newly sharpened sabers. His terrifying demonstration lacerates all enemies and may cause bleeding.","Chau_Ka_Long_Poundmates.webp","Price: 440€")'>
+                    <img src="Chau_Ka_Long_Poundmates.webp" alt="Chau Ka Long from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Goro Majima","Weep and despair as the Mad Dog of Shimano descends with crackling madness and thundering fury from atop the empire he built. Countless daggers strike and may paralyze all foes.","Goro_Majima_Poundmates.webp","Price: 5500€")'>
+                    <img src="Goro_Majima_Poundmates.webp" alt="Goro Majima from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Omelette","Indulge in fresh delight as Ijinchos favorite fowl delivers one of two special eggs, restoring your strength","Omelette_Poundmates.webp","Price: 330€")'>
+                    <img src="Omelette_Poundmates.webp" alt="Omelette from the yakuza sagag">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Kyroe Shirakawa","Thankfully, this kind ladys in the business of dishing out not punishment, but pork soup. Her hearty, nourishing concoction restores the partys MP.","Kiyoe_Shirakawa_Poundmates.webp","Price: 17€")'>
+                    <img src="Kiyoe_Shirakawa_Poundmates.webp" alt="Kiyoe Shirakawa from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Gary Buster Holmes","Call on the services of a musclebound champion to pound enemies into oblivion, occasionally stunning those who survive.","Gary_Holmes_Poundmates.webp","Price: 55€")'>
+                    <img src="Gary_Holmes_Poundmates.webp" alt="Gary Buster Holmes from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Il Yu-Jin","Get a sneak peek at this up-and-coming spoof of a famous Korean drama. Filmed at arctic temperatures, this chilling scene freezes all enemies, who may end up catching a cold.","Il_Yu-Jin_Poundmates.webp","Price: 220€")'>
+                    <img src="Il_Yu-Jin_Poundmates.webp" alt="Il Yu-Jin from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Jiei-san","Recoil in disgust as this butchers son carves up a gruesome sight. Strikes sharp steel deep into your enemies flesh, and occasionally, fear into their hearts.","Jiei-san_Poundmates.webp","Price: 330€")'>
+                    <img src="Jiei-san_Poundmates.webp" alt="Jiei-san from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Masaru Watase","Witness the captain of the Omi Alliance in full fighting form as he mercilessly beats down an enemy. Should the pitiable fool remain standing, their Attack will be greatly lowered.","Masaru_Watase_Poundmates.webp","Price: 5500€")'>
+                    <img src="Masaru_Watase_Poundmates.webp" alt="Masaru Watase from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Megumi","Find out how one earnest girl can make you rich by collecting donations from sleazebags. The way she miraculously moves their hearts (and wallets) makes it seem like the worlds not such a bad place.","Megumi_Poundmates.webp","Price: 110€")'>
+                    <img src="Megumi_Poundmates.webp" alt="Megumi from the yakuza sagag">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Mr. Masochist","Learn how to eliminate pain from a masochist whos suffered many agonizing pleasures. Temporarily puts the party in a manic state so youll barely feel anything at all.","Mr._Masochist_Poundmates.webp","Price: 390€")'>
+                    <img src="Mr._Masochist_Poundmates.webp" alt="Mr. Masochist from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Nancy-chan","Even Nancy and her crawfish friends are here to get in on some pounding. Marvel at the beasties who, prized pincers held aloft, rhinectomize and occasionally poison their prey.","Nancy_Poundmates.webp","Price: 6€")'>
+                    <img src="Nancy_Poundmates.webp" alt="Nancy-chana from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Ono Michio","Welcome a familiar face into the fray. This beloved mascot conveys the charm of Onomichi with every facet of his being, boosting your allies Attack and Defense.","Ono_Michio_Poundmates.webp","Price: 390€")'>
+                    <img src="Ono_Michio_Poundmates.webp" alt="Ono Michio from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Patriarch Gondawara","Watch in satisfaction as a patriarch well past infancy pounds the enemies eardrums with a horrifying tantrum, lowering their Attack and Defense.","Patriarch_Gondawara_Poundmates.webp","Price: 30€")'>
+                    <img src="Patriarch_Gondawara_Poundmates.webp" alt="Patriarch Gondawara from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Robson","Witness the citys mythical mischievous cat show off some serious skills a it pounces on enemies with the force of one of natures most terrifying predators. May leave the enemies charmed.","Robson_Poundmates.webp","Price: 280€")'>
+                    <img src="Robson_Poundmates.webp" alt="Robson from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Taiga Saejima","The man rumored to have slain 18 yakuza delivers a pounding like no other using a manhole cover, momentum, and tons of collateral damage. Mows down all enemies, greatly lowering their Defense.","Taiga_Saejima_Poundmates.webp","Price: 5500€")'>
+                    <img src="Taiga_Saejima_Poundmates.webp" alt="Taiga Saejima from the yakuza sagag">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Taka the Striker","Call up the president of a biker gang for some high-speed vehicular pounding. Knocks away all enemies and may even leave burns.","Taka_the_Striker_Poundmates.webp","Price: 280€")'>
+                    <img src="Taka_the_Striker_Poundmates.webp" alt="Taka the Striker from the yakuza saga">
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">    
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <ul id="list">
+                <li>Location: Shinagawa, Tokyo, Japan</li>
+                <li>Email: Poundmates@notaemail.nowhere</li>
+                <li>Phone Number:+81 80-1234-5678 </li>
+
+            </ul>
+            <h3>All rights reserved to SEGA and RGG studios, i claim no onwership over the images,character and names and only use them as fan-content that is not monetized</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
