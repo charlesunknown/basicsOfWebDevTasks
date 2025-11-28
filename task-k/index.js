@@ -16,9 +16,18 @@ function showOfferDialog(hisName, stats, img, price) {
     button_close.onclick = () => { cdialog.close(); cdialog.remove() };
     button_close.id = "close";
     button_close.innerHTML = "&#10006";
+
+    const orderbtn = document.createElement("button");
+    orderbtn.innerHTML = "Order";
+    orderbtn.id="button_order";
+    orderbtn.onclick = function(){Addtobasket(hisName,price);};
+
     title_div.appendChild(button_close);
 
     title_div.appendChild(Name_dialog);
+    
+    title_div.appendChild(orderbtn);
+
     cdialog.appendChild(title_div);
     const img_div = document.createElement("div");
     const div_img = document.createElement("img");
@@ -38,12 +47,8 @@ function showOfferDialog(hisName, stats, img, price) {
     const price_dialog = document.createElement("h3");
     price_dialog.innerHTML = price;
 
-    const orderbtn = document.createElement("button");
-    orderbtn.innerHTML = "Order";
-    orderbtn.onclick = function(){Addtobasket(hisName,price);};
     text_div.appendChild(Stats_dialog);
     text_div.appendChild(price_dialog);
-    text_div.appendChild(orderbtn);
     cdialog.appendChild(text_div);
 
 

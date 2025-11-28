@@ -328,7 +328,13 @@ dialog::backdrop{
     align-items: center;
 
 }
-
+#button_oder{
+    display: flex;
+    width:30px;
+    height:30px;
+    justify-content: center;
+    align-items: center;
+}
 
 #dialog_text{
     display: flex;
