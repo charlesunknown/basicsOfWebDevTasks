@@ -105,7 +105,9 @@ body {
     font-size: var(--h1-size);
     color: var(--txt_colour);
 }
-
+.class a{
+    color: var(--txt_colour);
+}
 
 /* Content container with side margins */
 .Intro {

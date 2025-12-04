@@ -48,6 +48,7 @@ body {
     font-size: var(--base-size);
 }
 
+
 /* Header */
 .site-header {
     padding-top: 3rem;
@@ -89,6 +90,9 @@ body {
   color: white;
 }
 
+.class a{
+    color: var(--txt_colour);
+}
 
 
 .site-footer {
