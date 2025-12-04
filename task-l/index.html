@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page - Poundmates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+
+<body>
+    <header class="site-header">
+        <h1 id="title">POUNDMATES</h1>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="https://charlesunknown.github.io/basicsOfWebDevTasks/task-j/catalog.html">Catalogue</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="https://charlesunknown.github.io/basicsOfWebDevTasks/task-k/Order.html">Order</a>
+         </div>
+    </header>
+    <main>
+        <div class="Intro">
+            <div class="intro-text">
+                <h1>
+                    What is Poundmates ?
+                </h1>
+            </div>
+            <div class="intro-img">
+                
+                <video controls poster="videoposter.png">
+                    <source src="introvid0001-0636.mp4" type="video/mp4">
+                    <track src="introvid.vtt" kind="subtitles" srclang="en" label="English">
+                </video>
+            </div>
+        </div>
+
+        <div class="Unique">
+            <div class="Unique-img">
+                <img src="BWpoundmatesunique2.png" alt="Character from Like A Dragon Kasuga ichican on a phone call with a determined look">
+            </div>
+            <div class="Unique-text">
+                <h2>
+                    What makes us special ?
+                </h2>
+                <h3>
+                    We are a one of a kind company that offers a service unlike no other. <br> Our service is ever growing with uniquely talented people always ONE phone call away.
+                    <br> More than 73% of calls end up in a victory for our client.
+                    <br> The ordered Poundmate arrived always in less than 2 minutes.
+                </h3>
+            </div>
+        </div>
+        
+        
+        <div class="Showcase">
+            <div class="showcase-text">
+                <h2>
+                    "A prime selection of Poundmates" -Founder of Poundmates, Gary Buster
+                </h2>
+            </div>
+            <div class="showcase-products">
+                <h1> Hand-picked offers from our catalogue - Click images to see details</h1>
+                <button class="Offer" onclick='showOfferDialog("Daigo Dojima","Stand in awe as the Tojo Clans sixth chairman summons his forebears from beyond the grave. This immortal volley damages all enemies and may seal their skills.","Daigo_Poundmates.webp")'>
+                    <img src="Daigo_Poundmates.webp" alt="Daigo Dojima from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Kazuma Kiryu","The legend himself delivers a pounding beyond comprehension Deals enormous damage to all enemies with moves that rival a dragons. Also has a chance to instantly knock out foes.","Kazuma_Kiryu_Poundmates.webp")'>
+                    <img src="Kazuma_Kiryu_Poundmates.webp" alt="Kazuma Kiryu from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Chau Ka Long","Say the word and a mysterious weapon shop owner will arrive to test out his newly sharpened sabers. His terrifying demonstration lacerates all enemies and may cause bleeding.","Chau_Ka_Long_Poundmates.webp")'>
+                    <img src="Chau_Ka_Long_Poundmates.webp" alt="Chau Ka Long from the yakuza saga">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Goro Majima","Weep and despair as the Mad Dog of Shimano descends with crackling madness and thundering fury from atop the empire he built. Countless daggers strike and may paralyze all foes.","Goro_Majima_Poundmates.webp")'>
+                    <img src="Goro_Majima_Poundmates.webp" alt="Goro Majima from the yakuza saga">
+                </button>
+                
+                <button class="Offer" onclick='showOfferDialog("Omelette","Indulge in fresh delight as Ijinchos favorite fowl delivers one of two special eggs, restoring your strength","Omelette_Poundmates.webp")'>
+                    <img src="Omelette_Poundmates.webp" alt="Omelette from the yakuza sagag">
+                </button>
+
+                <button class="Offer" onclick='showOfferDialog("Kyroe Shirakawa","Thankfully, this kind ladys in the business of dishing out not punishment, but pork soup. Her hearty, nourishing concoction restores the partys MP.","Kiyoe_Shirakawa_Poundmates.webp")'>
+                    <img src="Kiyoe_Shirakawa_Poundmates.webp" alt="Kiyoe Shirakawa from the yakuza saga">
+                </button>
+            </div>
+            <div id="parent_link">
+                <a id="Page_link" href="https://charlesunknown.github.io/basicsOfWebDevTasks/task-j/catalog.html">See Our Catalogue Page</a>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">    
+        <div  id="contact">
+            <h2 >Contact Information</h2>
+            <ul id="list">
+                <li>Location: Shinagawa, Tokyo, Japan</li>
+                <li>Email: Poundmates@notaemail.nowhere</li>
+                <li>Phone Number:+81 80-1234-5678 </li>
+
+            </ul>
+            <h3>All rights reserved to SEGA and RGG studios, i claim no onwership over the images,character and names and only use them as fan-content that is not monetized</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
